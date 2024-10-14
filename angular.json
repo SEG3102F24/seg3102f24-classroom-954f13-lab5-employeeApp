@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "employeeApp": {
+=======
+    "lab5_300200464": {
+>>>>>>> 8632924 (initial commit)
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": {
               "base": "dist/employee-app"
             },
@@ -32,12 +37,37 @@
             ],
             "scripts": [],
             "browser": "src/main.ts"
+=======
+            "outputPath": "dist/lab5_300200464",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+>>>>>>> 8632924 (initial commit)
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
+<<<<<<< HEAD
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
                 },
@@ -45,6 +75,15 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
+=======
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+>>>>>>> 8632924 (initial commit)
                 }
               ],
               "outputHashing": "all"
@@ -52,8 +91,12 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
+<<<<<<< HEAD
               "sourceMap": true,
               "namedChunks": true
+=======
+              "sourceMap": true
+>>>>>>> 8632924 (initial commit)
             }
           },
           "defaultConfiguration": "production"
@@ -62,19 +105,30 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "employeeApp:build:production"
             },
             "development": {
               "buildTarget": "employeeApp:build:development"
+=======
+              "buildTarget": "lab5_300200464:build:production"
+            },
+            "development": {
+              "buildTarget": "lab5_300200464:build:development"
+>>>>>>> 8632924 (initial commit)
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "buildTarget": "employeeApp:build"
           }
+=======
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+>>>>>>> 8632924 (initial commit)
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -85,8 +139,15 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+<<<<<<< HEAD
               "src/favicon.ico",
               "src/assets"
+=======
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+>>>>>>> 8632924 (initial commit)
             ],
             "styles": [
               "src/styles.css"

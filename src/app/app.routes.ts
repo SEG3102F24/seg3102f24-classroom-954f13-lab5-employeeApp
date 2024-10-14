@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+<<<<<<< HEAD
 import {EmployeeComponent} from "./employee/employee.component";
 import {EmployeesComponent} from "./employees/employees.component";
 
@@ -9,3 +10,7 @@ export const routes: Routes = [
   {path: '**', component: EmployeesComponent}
 ];
 
+=======
+
+export const routes: Routes = [];
+>>>>>>> 8632924 (initial commit)
