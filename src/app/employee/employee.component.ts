@@ -3,6 +3,7 @@ import { AbstractControl, FormBuilder, Validators, ReactiveFormsModule } from "@
 import {EmployeeService} from "../service/employee.service";
 import { Router, RouterLink } from "@angular/router";
 import {Employee} from "../model/employee";
+import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-employee',
@@ -15,6 +16,7 @@ export class EmployeeComponent {
   private builder: FormBuilder = inject(FormBuilder);
   private employeeService: EmployeeService = inject(EmployeeService);
   private router: Router = inject(Router);
+  //employees$: Observable<Employee[]> = this.employeeService.getEmployees();
   employeeForm = this.builder.group({
     name: ['', Validators.required],
     dateOfBirth: ['', Validators.required],
@@ -38,7 +40,17 @@ export class EmployeeComponent {
       this.salary.value,
       this.gender.value,
       this.email.value);
-    this.employeeService.addEmployee(employee);
+
+    const employeeData = {
+      name: employee.name,
+      dateOfBirth: employee.dateOfBirth,
+      city: employee.city,
+      salary: employee.salary,
+      gender: employee.gender,
+      email: employee.email
+    };
+
+    this.employeeService.addEmployee(employeeData);
     this.employeeForm.reset();
     this.router.navigate(['/employees']).then(() => {});
   }
