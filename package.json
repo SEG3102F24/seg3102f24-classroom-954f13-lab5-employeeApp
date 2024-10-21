@@ -14,7 +14,10 @@
     "@angular/common": "^18.2.7",
     "@angular/compiler": "^18.2.7",
     "@angular/core": "^18.2.7",
+<<<<<<< HEAD
     "@angular/fire": "^18.0.1",
+=======
+>>>>>>> 33610684676a2b0825f0904491c247c9e83382fc
     "@angular/forms": "^18.2.7",
     "@angular/platform-browser": "^18.2.7",
     "@angular/platform-browser-dynamic": "^18.2.7",
