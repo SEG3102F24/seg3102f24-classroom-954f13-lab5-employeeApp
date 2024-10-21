@@ -53,7 +53,6 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
-<<<<<<< HEAD
               "namedChunks": true,
               "fileReplacements": [
                 {
@@ -61,9 +60,6 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
-=======
-              "namedChunks": true
->>>>>>> 33610684676a2b0825f0904491c247c9e83382fc
             }
           },
           "defaultConfiguration": "production"
