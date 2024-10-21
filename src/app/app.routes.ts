@@ -8,4 +8,3 @@ export const routes: Routes = [
   {path: '', redirectTo: 'employee', pathMatch: 'full'},
   {path: '**', component: EmployeesComponent}
 ];
-
